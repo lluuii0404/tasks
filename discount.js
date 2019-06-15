@@ -1,0 +1,5 @@
+const makeDiscount = (percent) => {
+  // implementation
+}
+
+
