@@ -1,3 +1,9 @@
+// В файле call_via_apply.js вам необходимо вызывать функцию sum очень хитрым способом :)
+// Вызовите данную функцую используя функцию call через apply.
+// В консоли должны увидеть вывоад типа Number.
+// Подсказка: sum.call.apply.
+
+
 function sum(a = 1, b = 2) {
   const isInvalid = Array.from(arguments).some(
     item => typeof item !== 'number' || isNaN(item)
@@ -14,4 +20,6 @@ function sum(a = 1, b = 2) {
 
 sum.c = 10;
 
-//sum.call.apply()
+sum.call.apply(sum, [sum])
+
+// 13
