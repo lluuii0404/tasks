@@ -21,7 +21,7 @@ function memoize(fn) {
 	return function(arg) {
 		let prop = Object.keys(cache).find( item => item == arg ? item : null)
 
-		if (prop != null) {
+		if (prop != undefined) {
 			console.log('The result was already calculated - ', cache[prop])
 			return cache[prop]
 		} else {
