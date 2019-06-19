@@ -25,7 +25,6 @@ function memoize(fn) {
 			console.log('The result was already calculated - ', cache[prop])
 			return cache[prop]
 		} else {
-			cache = Object.assign( {...cache} , {[arg] : null})
 			cache[arg] = fn(arg)
 			console.log('New calculation result - ', cache[arg])
 			return cache[arg]
