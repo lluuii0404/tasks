@@ -4,11 +4,14 @@ class Watch {
   }
 
   start() {
-    // Your implementation here
+    this.interval = setInterval( function (){
+      console.log('time now: ', new Date().toLocaleTimeString();)
+    },1000)
   }
 
   stop() {
-    // Your implementation here
+    clearInterval(this.interval)
+	console.clear()
   }
 }
 

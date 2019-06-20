@@ -1,5 +1,13 @@
 const reduce = (array, fn, initial) => {
-  // Your implementation here
+  let acc = (initial === undefined) ? undefined : initial
+
+	for (let i = 0; i < array.length; i++) {
+        if (acc !== undefined)
+            acc = fn.call(array, acc, array[i], i);
+        else
+            acc = array[i];
+    }
+    return acc;
 };
 
 const array = [1, 2, 3];
