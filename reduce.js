@@ -1,5 +1,5 @@
 const reduce = (array, fn, initial) => {
-  let acc = (initial === undefined) ? undefined : initial
+  let acc = initial
 
 	for (let i = 0; i < array.length; i++) {
         if (acc !== undefined)

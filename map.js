@@ -1,6 +1,6 @@
 const map = (a, fn) => {
   	const arr =[]
-	var i = 0
+	let i = 0
 	while(i < a.length){
 		arr.push(fn.call(a, a[i], i))
 		i++

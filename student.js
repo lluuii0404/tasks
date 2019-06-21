@@ -18,7 +18,7 @@ class Student extends User {
 	getCourse() {
 		const kurs = new Date().getFullYear() - this.year
 		if (kurs > 0 && kurs < 6) return kurs
-		else return 'Уже не студент'
+		return 'Уже не студент'
 	}
 }
 
