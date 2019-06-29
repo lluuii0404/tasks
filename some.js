@@ -1,6 +1,6 @@
 function some(array, callbackFn) {
   for (let i = 0; i < array.length; i++ ) {
-		if (callbackFn.call(array, array[i], i, array)){
+		if (callbackFn(array[i], i, array)){
 			return true
 		}
   }
