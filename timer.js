@@ -12,7 +12,7 @@ class Timer {
   }
 
   reset() {
-    //
+    this.initialTime = 0
   }
 
   addTime(time) {
