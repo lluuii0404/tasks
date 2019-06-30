@@ -48,3 +48,7 @@ class Timer {
     console.log("time over");
   }
 }
+
+const timer = new Timer(70);
+
+timer.start();
