@@ -39,16 +39,13 @@ async function asyncTest() {
   const responsePost = await fetch('https://jsonplaceholder.typicode.com/posts');
   const dataPosts = await responsePost.json();
 
-  const post = (data) => {
-    const post = data[random(100, 0)];
-    console.log('My post is', post);
-    const finalRes = {
+  const post = dataPosts[random(100, 0)];
+  console.log('My post is', post);
+  const finalRes = {
       currentUser,
       post
-    };
-    console.log('Finally', finalRes);
-  }
-  post(dataPosts)
+  };
+  console.log('Finally', finalRes);
 }
 
 
