@@ -28,13 +28,11 @@ function test() {
 async function asyncTest() {
   console.log('I have to appear in a console first');
 
-  const user = (data) => {
-		const user = data[random(10, 0)];
-    console.log('My user is', user);
-    return user;
-  }
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  const dataUsers = await response.json();
 
-  const currentUser = user(dataUsers);
+  const user = dataUsers[random(10, 0)];
+  console.log('My user is', user);
 
   const responsePost = await fetch('https://jsonplaceholder.typicode.com/posts');
   const dataPosts = await responsePost.json();
@@ -42,10 +40,11 @@ async function asyncTest() {
   const post = dataPosts[random(100, 0)];
   console.log('My post is', post);
   const finalRes = {
-      currentUser,
+      user,
       post
   };
   console.log('Finally', finalRes);
+  
 }
 
 
