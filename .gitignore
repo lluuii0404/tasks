@@ -1,0 +1,9 @@
+# Compiled binary
+dist
+
+# Dependency directory
+node_modules
+
+# Garbage files
+.DS_Store
+*.swp
