@@ -23,11 +23,6 @@ function sassToCss(cb) {
 }
 gulp.task(sassToCss);
 
-// gulp.watch(['/*.html', 'src/**/*.scss'], function(cb) {
-//   gulp.parallel(css, javascript)
-//   cb();
-// });
-
 function watchFiles() {
   gulp.watch('src/**/*.html', minify_html);
   gulp.watch('src/**/*.scss', sassToCss);
