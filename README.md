@@ -4,4 +4,4 @@
 
 # 2. Vue app - completed
 
-https://codesandbox.io/s/vue-template-thpd0
+https://codesandbox.io/s/vue-app-users-table-thpd0
