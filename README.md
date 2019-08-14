@@ -1,6 +1,14 @@
+# Lecture 12
 
+Создать CRUD операции для `posts, comments, albums, photos, todos, users`
 
-branch/lecture_2
+Пример
 
+GET /users - получить всех пользователей
+GET /users/:id - получить пользователя по id
+POST /users - добавить нового пользователя в коллекцию
+PATCH /users/id - обновить данные об пользователе в коллекции
+DELETE /users/id - удалить пользователя из коллекции
 
-branch/lecture_3
+Все коллекци находяться в объекте `database`, к примеру `database.users`.
+Остальные endpoint`ы сделать по аналогии
